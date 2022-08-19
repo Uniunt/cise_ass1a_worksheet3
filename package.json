@@ -1,0 +1,30 @@
+{
+  "name": "cise_assia_worksheet3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "build": "cd my-app && npm run build",
+    "install-my-app": "cd my-app && npm install",
+    "heroku-postbuild": "npm run install-my-app && npm run build",
+    "server": "nodemon app.js",
+    "client": "cd my-app && npm start",
+    "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\"",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix client\""
+  },
+  "author": "Chaoyang Wang",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "validation": "^0.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

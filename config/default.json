@@ -1,0 +1,4 @@
+{
+    "mongoURI":
+      "mongodb+srv://uniunt:uniunt@cluster0.otnublq.mongodb.net/?retryWrites=true&w=majority"
+  }
