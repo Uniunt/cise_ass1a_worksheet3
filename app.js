@@ -20,6 +20,7 @@ app.use(cors({ origin: true, credentials: true }));
 
 // Init Middleware
 app.use(express.json({ extended: false }));
+app.use(express.static('my-app/build'))
 
 app.get('/', (req, res) => res.send('Hello world!'));
 
@@ -31,7 +32,7 @@ const port = process.env.PORT || 8082;
 app.listen(port, () => console.log(`Server running on port ${port}`));
 
 // Step 1:
-app.use(express.static('./my-app/build'));
+
 // Step 2:
 // app.get("*", function (request, response) {
 //   response.sendFile(path.resolve(__dirname, "./my-app/build", "index.html"));

@@ -8,7 +8,7 @@
     "start": "node app.js && serve -s build",
     "heroku-postbuild": "npm run client-install && npm run client-build",
     "client-install": "cd my-app && npm install",
-    "client-build": "cd my-app && npm run build",
+    "client-build": "cd my-app && npm run build"
   },
   "author": "Chaoyang Wang",
   "license": "ISC",
